@@ -6,14 +6,16 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route
+        {/* <Route
           path="/"
           element={
             <PrivateRoute>
               <Dashboard />
             </PrivateRoute>
           }
-        ></Route>
+        ></Route> */}
+
+        <Route path="/" element={<Dashboard />} />
         <Route path="/login" element={<Login />} />
         <Route path="/*" element={<Error />} />
       </Routes>
